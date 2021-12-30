@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <p class="textbox"></p>
+      <input type="text" value="" class="message" placeholder="Hello" />
+      <button class="button" type="submit">Send</button>
+    </div>
+    <script>
+      const text = document.querySelector(".textbox");
+      const message = document.querySelector(".message");
+      let button = document.querySelector(".button");
+
+      button.addEventListener("click", () => {
+        const judul = document.createElement("p");
+        judul.innerHTML = `<p class="new-message">${message.value}</p>`;
+        text.appendChild(judul);
+      });
+    </script>
+  </body>
+</html>

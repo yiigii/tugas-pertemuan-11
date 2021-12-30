@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs - Rupiah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kurs Mata Uang</h1>
+    <div class="container">
+      <input type="number" class="input" />
+
+      <select class="kurs">
+        <option value="usd">USD (American Dollar)</option>
+        <option value="eur">Euro Dollar</option>
+        <option value="sgd">SGD (Singapure Dollar)</option>
+      </select>
+
+      <button class="hitung">Hitung</button>
+      <p>Hasil:</p>
+      <span class="hasil"></span>
+    </div>
+
+    <script>
+      // Select element by QuerySelector
+      const input = document.querySelector(".input");
+      const kursSelect = document.querySelector(".kurs");
+      const hitungBtn = document.querySelector(".hitung");
+      const hasil = document.querySelector(".hasil");
+
+      const kursMataUang = {
+        usd: 14235,
+        eur: 16101,
+        sgd: 10491,
+      };
+      const { usd, eur, sgd } = kursMataUang;
+      
+      hitungBtn.addEventListener("click", () => {
+        let hasilUSD = input.value * usd;
+        let hasilEUR = input.value * eur;
+        let hasilSGD = input.value * sgd;
+
+        if (kursSelect.value == "usd") {
+          hasil.innerHTML = ` IDR ${hasilUSD.toLocaleString("id-ID")} Rupiah`;
+        } else if (kursSelect.value == "eur") {
+          hasil.innerHTML = ` IDR ${hasilEUR.toLocaleString("id-ID")} Rupiah`;
+        } else if (kursSelect.value == "sgd") {
+          hasil.innerHTML = `IDR ${hasilSGD.toLocaleString("id-ID")} Rupiah`;
+        }
+      });
+    </script>
+  </body>
+</html>

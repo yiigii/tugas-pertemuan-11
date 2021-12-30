@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 400px;
+  height: hidden;
+  border: 2px solid #4a4a4a;
+  margin: 10% auto;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+h3 {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.user {
+  padding: 0.6rem;
+  width: 20rem;
+  margin: 6px 0;
+}
+
+.pass {
+  padding: 0.6rem;
+  width: 20rem;
+  margin: 6px 0;
+}
+
+.btn {
+  background-color: #00d1b2;
+  border: none;
+  padding: 1em 8.8em;
+  margin: 1rem 0;
+  font-size: 16px;
+  border-radius: .2rem;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}

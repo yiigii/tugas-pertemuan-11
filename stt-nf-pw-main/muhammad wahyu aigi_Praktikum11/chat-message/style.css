@@ -1,0 +1,39 @@
+.container {
+  margin: 2% auto;
+  padding: 3rem;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 2rem;
+  background-color: lightblue;
+  align-items: flex-end;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.message {
+  width: 10rem;
+  height: 1rem;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+.button {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  border: none;
+}
+
+.new-message {
+  background-color: aliceblue;
+  width: hidden;
+  height: 1.5rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Validation</title>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="data_form">
+        <h3>Form Validation</h3>
+        <div>
+          <input
+            type="text"
+            name="nama"
+            id="nama"
+            placeholder="Nama Pelanggan"
+          />
+          <p id="req_nama" style="display: none; color: red">
+            isi nama terlebih dahulu
+          </p>
+          <p id="char_nama" style="display: none; color: red">
+            maxsimal 30 karakter
+          </p>
+        </div>
+        <div>
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <p id="req_email" style="display: none; color: red">
+            isi email terlebih dahulu
+          </p>
+          <p id="valid_email" style="display: none; color: red">
+            harus menggunakan email valid
+          </p>
+        </div>
+        <div>
+          <input type="time" name="jam" id="jam" />
+          <p id="req_jam" style="display: none; color: red">
+            isi jam keberangkatan terlebih dahulu
+          </p>
+        </div>
+        <div>
+          <input
+            type="text"
+            name="tujuan"
+            id="tujuan"
+            placeholder="Tujuan keberangkatan"
+          />
+          <p id="req_tujuan" style="display: none; color: red">
+            isi tujuan keberangkatan terlebih dahulu
+          </p>
+        </div>
+        <div>
+          <input
+            type="text"
+            name="tiket"
+            id="tiket"
+            placeholder="Jumlah Tiket"
+          />
+          <p id="req_tiket" style="display: none; color: red">
+            isi jumlah tiket terlebih dahulu
+          </p>
+          <p id="char_tiket" style="display: none; color: red">
+            maxsimal 10 tiket
+          </p>
+        </div>
+        <button type="button" class="btn" id="lanjut">Send</button>
+      </form>
+      <br />
+      <div>
+        <label>Nama Pelanggan</label>
+        <p id="hasil_nama"></p>
+
+        <label>Email</label>
+        <p id="hasil_email"></p>
+
+        <label>Jam Keberangkatan</label>
+        <p id="hasil_jam"></p>
+
+        <label>Tujuan Keberangkatan</label>
+        <p id="hasil_tujuan"></p>
+
+        <label>Jumalah Tiket</label>
+        <p id="hasil_tiket"></p>
+      </div>
+    </div>
+  </body>
+  <!-- Script Src -->
+  <script src="./validation.js"></script>
+</html>

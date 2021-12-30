@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container {
+  width: 400px;
+  height: hidden;
+  border: 2px solid #4a4a4a;
+  margin: 10% auto;
+  padding: 2rem;
+}
+
+h3 {
+  text-align: center;
+  line-height: 1.6;
+}
+
+#nama {
+  padding: 0.6rem;
+  width: 100%;
+  margin: 6px 0;
+}
+
+#email {
+  padding: 0.6rem;
+  width: 100%;
+  margin: 6px 0;
+}
+
+#jam {
+  padding: 0.6rem;
+  width: 100%;
+  margin: 6px 0;
+}
+
+#tiket {
+  padding: 0.6rem;
+  width: 100%;
+  margin: 6px 0;
+}
+
+#tujuan {
+  padding: 0.6rem;
+  width: 100%;
+  margin: 6px 0;
+}
+
+.btn {
+  background-color: #00d1b2;
+  border: none;
+  padding: 1em 8.5em;
+  margin: 1rem 0;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+}
